@@ -1,0 +1,271 @@
+/*-------------------------------------------------------------------BODY----------------------------------------------------------------------------*/
+
+.container-fluid {
+    background-color: lightgrey;
+}
+
+section {
+    padding: 20px;
+    padding-top: 75px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-body {
+    background-color: rgb(226, 229, 233);
+}
+
+
+/*------------------------------------------------------------------HEADER---------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 80px;
+    background: #424246;
+    padding: 0 20px;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.badge {
+    float: left;
+    line-height: 100px;
+}
+
+.logo {
+    line-height: 100px;
+    float: left;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.menu {
+    float: right;
+    line-height: 100px;
+}
+
+.menu a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 10px;
+    transition: 0, 4s;
+}
+
+.show-menu-btn,
+.hide-menu-btn {
+    transition: 0, 4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu a:hover,
+.show-menu-btn,
+.hide-menu-btn {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.show-menu-btn {
+    float: right;
+}
+
+.show-menu-btn i {
+    line-height: 100px;
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+
+/*---------------------------------------------------------------INTRODUCTION------------------------------------------------------------------------*/
+
+#banner {
+    padding: 100px;
+    background-image: url(/img/devfrontend.jpg);
+    background-size: cover;
+}
+
+.title-name {
+    padding: 30px;
+    color: rgb(4, 60, 165);
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    border-top: 10px solid #424246;
+    background-color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card-title-name {
+    font-size: 40px;
+}
+
+.myCard {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+
+/*---------------------------------------------------------------PRESENTATION------------------------------------------------------------------------*/
+
+.maphoto {
+    text-align: center;
+    border-radius: 50%;
+}
+
+.profile {
+    font-weight: bold;
+}
+
+.proficiency {
+    color: blue;
+}
+
+
+/*-------------------------------------------------------------------SKILLS--------------------------------------------------------------------------*/
+
+#skills {
+    background-color: white;
+}
+
+
+/*-----------------------------------------------------------------EDUCATION-------------------------------------------------------------------------*/
+
+.formation {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*-----------------------------------------------------------------PROJECTS--------------------------------------------------------------------------*/
+
+#projects {
+    background-color: white;
+}
+
+.inner_card {
+    overflow: hidden;
+}
+
+.inner_card img {
+    transition: all 1.5s ease;
+}
+
+.inner_card:hover img {
+    transform: scale(1.5);
+}
+
+
+/*-------------------------------------------------------------PROFESSIONNAL EXPERIENCE--------------------------------------------------------------*/
+
+.card {
+    margin: 20px;
+}
+
+
+/*--------------------------------------------------------------------CONTACT------------------------------------------------------------------------*/
+
+.contact {
+    border: 2px solid black;
+    border-radius: 15px;
+    height: auto;
+    width: fit-content;
+    padding: 25px;
+}
+
+#contacts {
+    background-color: #424246;
+    color: #fff;
+}
+
+.wayToContact {
+    font-size: 40px;
+}
+
+#e-mail,
+#number-phone,
+#linked-in {
+    font-size: 20px;
+}
+
+.cv {
+    font-size: 40px;
+}
+
+.infoContact p {
+    display: none;
+    text-align: 'center';
+    color: #fff;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.infoContact .fab:hover {
+    transform: scale(1.10);
+}
+
+.infoContact .fas:hover {
+    transform: scale(1.10);
+}
+
+.infoContact .far:hover {
+    transform: scale(1.10);
+}
+
+
+/*-----------------------------------------------------------------MEDIA-QUERIES---------------------------------------------------------------------*/
+
+@media all and (max-width:768px) {
+    .formation {
+        display: block;
+        justify-content: space-around;
+    }
+    /*--------------------------------------------------------------------HEADER-------------------------------------------------------------------------*/
+    .show-menu-btn,
+    .hide-menu-btn {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 83%;
+        background: #314b64;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+    .hide-menu-btn {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #chk:checked~.menu {
+        right: 0;
+    }
+}
