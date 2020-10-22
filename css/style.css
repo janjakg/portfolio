@@ -99,7 +99,7 @@ section {
 
 #banner {
     padding: 100px;
-    background-image: url(/img/devfrontend.jpg);
+    background-image: url(/img/web.jpg);
     background-size: cover;
 }
 
@@ -121,7 +121,7 @@ section {
 
 .myCard {
     text-align: center;
-    font-family: 'Lobster', cursive;
+    font-family: 'Merriweather', serif;
 }
 
 
@@ -172,6 +172,11 @@ section {
 
 .inner_card:hover img {
     transform: scale(1.5);
+}
+
+.successDate {
+    font-weight: bold;
+    color: saddlebrown;
 }
 
 
