@@ -28,7 +28,7 @@ section {
 
 .header {
     height: 80px;
-    background: #424246;
+    background: #413C58;
     padding: 0 20px;
     color: #fff;
     position: fixed;
@@ -105,11 +105,11 @@ section {
 
 .title-name {
     padding: 30px;
-    color: rgb(4, 60, 165);
+    color: #007EA7;
     display: inline-block;
     border: none;
     border-radius: 5px;
-    border-top: 10px solid #424246;
+    border-top: 10px solid #413C58;
     background-color: #fff;
     text-align: center;
     font-size: 30px;
@@ -137,7 +137,7 @@ section {
 }
 
 .proficiency {
-    color: blue;
+    color: #3083DC;
 }
 
 
@@ -145,6 +145,12 @@ section {
 
 #skills {
     background-color: white;
+}
+
+.skillCard {
+    background-color: #A2708A;
+    border-radius: 3px;
+    color: #fff;
 }
 
 
