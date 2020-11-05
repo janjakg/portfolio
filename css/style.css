@@ -148,9 +148,9 @@ section {
 }
 
 .skillCard {
-    background-color: #A2708A;
+    background-color: #d1dbd8;
     border-radius: 3px;
-    color: #fff;
+    color: black;
 }
 
 
@@ -182,7 +182,7 @@ section {
 
 .successDate {
     font-weight: bold;
-    color: saddlebrown;
+    color: #313b72;
 }
 
 
@@ -204,7 +204,7 @@ section {
 }
 
 #contacts {
-    background-color: #424246;
+    background-color: #413C58;
     color: #fff;
 }
 
